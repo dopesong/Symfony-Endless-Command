@@ -69,7 +69,7 @@ abstract class EndlessCommand extends Command
         $this->addOption(
             'pidfile',
             null,
-            InputOption::VALUE_OPTIONAL,
+            InputOption::VALUE_REQUIRED,
             'The location of the PID file that should be created for this process',
             null
         );
@@ -78,7 +78,7 @@ abstract class EndlessCommand extends Command
         $this->addOption(
             'interval',
             null,
-            InputOption::VALUE_OPTIONAL,
+            InputOption::VALUE_REQUIRED,
             'Interval to run',
             null
         );
